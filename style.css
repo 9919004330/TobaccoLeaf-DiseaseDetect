@@ -54,19 +54,19 @@ body {
 #result__text p{
   padding: 1rem;
 }
-#result__text{
-  /* position: absolute;
+/* #result__text{
+  position: absolute;
   height: 100%;
   width: 100%;
   background-color: white;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; */
+  border-top-right-radius: 10px;
 
 
 
 
-  /* top:40%; */
-}
+  top:40%;
+} */
 .Q{
   font-size: large;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
@@ -181,20 +181,20 @@ body {
   height: 100%;
   position: absolute;
   display: none;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @keyframes infoTopAnimation {
   0%{
-    opacity: 0;
-    /* transform: translateY(100vh); */
+    /* opacity: 0; */
+    transform: translateY(100vh);
   }
   100%{
-    opacity: 1;
-    /* transform: translateY(0vh); */
+    /* opacity: 1; */
+    transform: translateY(0vh);
   }
 }
 .infoTopAnim{
-  animation: infoTopAnimation ease-in 150ms;
+  animation: infoTopAnimation ease-in 120ms;
 }
 .infoDownAnim{
   animation:infoDownAnimation ease-out 150ms ;
@@ -249,7 +249,13 @@ body {
   font-weight: 700;
 }
 #info__text p:first-child{
-  padding-top: 30px;
+  padding-top: 40px;
+}
+#info__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 #info__text p{
   padding: 10px 1px;
