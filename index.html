@@ -7,13 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#000000">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./assests/favicons/512x512bb.jpg" type="image/x-icon">
+	<link rel="manifest" href="./manifest.json">
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-	<title>WebCam Test</title>
+	<title>Tobacco Leaf Scanner</title>
 </head>
 
 <body>
 	<div id="camera-container">
 		<video autoplay id="camera-video"></video>
+		<img src="./assests/icons/Bounding Box.png" id="box-view" alt="">
 		<div id="top-down__menu">
 			<div id="top__menu">
 				<div id="empty-top__menu"></div>
@@ -29,7 +32,6 @@
 				<div id="empty-down__menu"></div>
 			</div>
 		</div>
-		<img src="./assests/icons/Bounding Box.png" id="box-view" alt="">
 	</div>
 
 	<div id="result-cont">	
@@ -59,6 +61,19 @@
 		</div>
 	</div>
 
+	<script>
+		let serviceWorker = null;
+        (async () => {
+            if ('serviceWorker' in navigator) {
+                try {
+                    serviceWorker = await navigator.serviceWorker.register('./sw.js');
+                } catch (error) {
+                    serviceWorker = null;
+                }
+            }
+        })();
+
+	</script>
 	<script src="script.js"></script>
 </body>
 
