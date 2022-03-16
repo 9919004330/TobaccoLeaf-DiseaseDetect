@@ -186,6 +186,8 @@ body {
 @keyframes infoTopAnimation {
   0%{
     /* opacity: 0; */
+     /* try more */
+     
     transform: translateY(100vh);
   }
   100%{
