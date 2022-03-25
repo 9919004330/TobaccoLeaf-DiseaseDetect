@@ -77,22 +77,42 @@ function clickPicture() {
     return canvas.toDataURL()
 }
 
+
+
+function imgResultDiseases(data){
+    document.querySelector('.cont-disease').textContent=PostData[data].name
+    document.querySelector('.img-ref').href=PostData[data].imageUrl
+    document.querySelector('.shoplink-ref').href=PostData[data].productLink
+    document.querySelector('.cont-disease').style.color='red'
+    document.querySelector('.cont-fertilizers').textContent=PostData[data].fertilizers
+    document.querySelector('.cont-causes').textContent=PostData[data].causes   
+    document.querySelector('.p-fertilizers').style.display='block'
+    document.querySelector('.p-causes').style.display='inherit'
+    document.querySelector('.links-fertilizers').style.display='inherit'
+}
+function imgResultHealthy(data){
+    document.querySelector('.cont-disease').textContent=PostData[data].name
+    document.querySelector('.cont-disease').style.color='#32cd32'
+}
+
 function forResult(imgData){
     document.getElementById('result-img').src=imgData
     result.style.display='unset'
     result.classList.add('resultUpAnimiation')
-    document.getElementById('result-img').onload=function(){
 
-        // let a=window.innerHeight
-        // let b=document.getElementById('result-img').getBoundingClientRect().height
-        // let c=(b*100)/a
-        // let d=90-c
-        // document.getElementById('result__text').style.top=d+'%'
-        // console.log(d,Math.round(d))
-        
+    document.querySelector('.p-fertilizers').style.display='none'
+    document.querySelector('.p-causes').style.display='none'
+    document.querySelector('.links-fertilizers').style.display='none'
+
+    document.getElementById('result-img').onload=function(){
         predictClass(document.getElementById('result-img'))
         .then(data => {
-                document.querySelector('.cont-disease').textContent=data
+            if(data === 5){
+                imgResultHealthy(data)
+            }
+            else{
+                imgResultDiseases(data)
+            }
             })
     }
 }
@@ -143,5 +163,5 @@ async function predictClass(imageTag){
     // console.log(predict);
     const maxItem = Math.max(...predict[0]);
     const classIndex = predict[0].indexOf(maxItem);
-    return labels[classIndex];
+    return classIndex;
 }
