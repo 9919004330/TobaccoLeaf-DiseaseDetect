@@ -55,7 +55,7 @@ body {
   padding: 1rem;
 }
 .Q{
-  font-size: large;
+  font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
   font-weight: 600;
 }
@@ -175,23 +175,27 @@ body {
 .cont-fertilizers{
   display: block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-
+  font-size: 16px;
+  margin-top: 4px;
 }
 .links-fertilizers{
   margin-top: -13px;
 }
 .links-fertilizers a{
-  background-color: rgb(223, 223, 223);
-  color: #000;
-  padding: 5px;
+  border: #007FFF 1px solid;
+  color: blue;
+  background-color: #0080ff27;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  padding: 6px 10px;
+  border-radius: 19px;
   text-decoration: none;
-  font-style: bold;
 }
 .p-causes{
-  margin-top: -30px;
+  margin-top: -40px;
 }
 .cont-causes{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  font-size: 17PX;
 
 }
 #info-cont__outer{
