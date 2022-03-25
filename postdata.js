@@ -11,7 +11,7 @@ const PostData=[
         fertilizers:'Mancozeb dithane m-45 10gm per 10L water or TATA BLITOX (Copper Oxychloride 50% WP) 10gm per 10L water',
         imageUrl:'https://m.media-amazon.com/images/I/61aiQfZyffL._SY879_.jpg',
         productLink:'https://www.amazon.in/Dow-Agrosciences-Dithane%C3%82%C2%AE-Fungicide-Vegetables/dp/B08MQG3Z47/ref=asc_df_B08MQG3Z47/?tag=googleshopdes-21&linkCode=df0&hvadid=396986444787&hvpos=&hvnetw=g&hvrand=4751209673787067954&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040208&hvtargid=pla-1402350129067&psc=1&ext_vrnc=hi',
-        causes:'Removal and destruction of diseased plant debris can check the primary infection promptly.Continuous growing of tobacco after tobacco must be avoided in the heavily infected fields.'
+        causes:'Removal and destruction of diseased plant debris can check the primary infection promptly. Continuous growing of tobacco after tobacco must be avoided in the heavily infected fields.'
     },
     {
         name:'Frog eye leaf spot',
