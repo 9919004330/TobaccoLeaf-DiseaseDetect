@@ -1,5 +1,5 @@
 // Service Worker Version 0.1
-const CACHE_NAME = "VERSION 1.0.3";
+const CACHE_NAME = "VERSION 1.0.5";
 
 const assets = [
     "./",
