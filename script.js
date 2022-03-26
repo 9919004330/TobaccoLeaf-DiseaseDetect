@@ -93,6 +93,7 @@ function imgResultDiseases(data){
 function imgResultHealthy(data){
     document.querySelector('.cont-disease').textContent=PostData[data].name
     document.querySelector('.cont-disease').style.color='#32cd32'
+    document.querySelector('.cont-fertilizers').style.display='none'
 }
 
 function forResult(imgData){
