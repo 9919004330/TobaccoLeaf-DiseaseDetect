@@ -84,6 +84,7 @@ function imgResultDiseases(data){
     document.querySelector('.img-ref').href=PostData[data].imageUrl
     document.querySelector('.shoplink-ref').href=PostData[data].productLink
     document.querySelector('.cont-disease').style.color='red'
+    document.querySelector('.cont-fertilizers').style.display='unset'
     document.querySelector('.cont-fertilizers').textContent=PostData[data].fertilizers
     document.querySelector('.cont-causes').textContent=PostData[data].causes   
     document.querySelector('.p-fertilizers').style.display='block'
